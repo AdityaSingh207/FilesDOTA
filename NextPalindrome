@@ -1,0 +1,25 @@
+import java.util.*;
+class Palindrome
+{
+	public static boolean x(int k)
+	{
+		if(Integer.toString(k).equals(new StringBuffer(k).reverse().toString()))
+				return true;
+		else
+			return false;
+						
+	}
+	public static void main(String args[])
+	{
+		int k;
+		Scanner sc = new Scanner(System.in);
+		k=sc.nextInt();
+		k++;
+		while(x(k)==false)
+		{
+			k++;
+		}
+		System.out.println(k);
+		sc.close();
+	}
+}
